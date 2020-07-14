@@ -1,0 +1,568 @@
+/* image on logo */
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+.logo img{
+    width: 54px;
+    border-radius: 55px;
+    padding:1px;
+    margin-left: 22px;
+}
+
+/* the container */
+.container{
+    display: flex;
+    background:green;
+}
+
+.logo{
+    flex: 1;
+}
+
+.ulnav{
+    flex: 1;
+}
+.head-logo{
+    flex: 1;
+}
+
+.head-logo h1{
+    margin:12px;
+    letter-spacing: 8px;
+    transition: all ;
+    animation-name: text;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+
+@keyframes text{
+    0%{
+        color:greenyellow;
+    }
+   100%{
+        color:green;
+    }
+}
+
+.ulnav  a{
+    text-decoration: none;;
+    padding: 5px;
+    margin-left: 12px;
+    color:#fff;
+}
+
+/* li a:hover{
+    border-radius: 12px;
+    transition: all 0.5s;
+    color: #000;
+} */
+
+
+
+.ulnav li{
+    display: inline-block;
+    margin: 20px 77px;
+
+}
+/* the section */
+
+.showcase{
+    background: linear-gradient( rgba(0,0,0,0.8),rgba(0,0,0,0.9) ),url(../images/food-salad-field-fresh-89267.jpg);
+    height: 64vh;
+}
+
+.showcase h1{
+    color: limegreen;
+    text-align: center;
+    padding-top: 222px;
+    word-spacing: 6px;
+    text-transform: capitalize;
+    font-size: 43px;   
+}
+
+.showcase p{
+    color: #fff;
+    text-align: center;
+    padding: 22px;
+    font-size: 19px;
+    text-transform: capitalize;
+}
+
+.content h3{
+    text-align: center;
+    padding:33px;
+    text-transform: capitalize;
+    font-size: 33px;
+    color: #777;
+}
+.flexwrap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows:minmax(40px auto);
+    grid-gap: 50px;
+}
+.flexwrap >div img{
+    width: 342px;
+    text-align: center; 
+    border-radius: 6px;   
+}
+.flexwrap >div{
+    padding: 44px;
+}
+
+.flexwrap >div p{
+    line-height: 32px;
+    font-size: 20px
+    color:#222;
+}
+
+.flexwrap >div h2{
+    color:lightgreen;
+    background: #222;
+    letter-spacing: 4px;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+
+.div-1{
+border: 1px solid greenyellow;
+}
+.div-2{
+    border: 1px solid greenyellow; 
+}
+.div-3{
+    border: 1px solid greenyellow; 
+}
+.div-4{
+    border: 1px solid greenyellow;  
+}
+.div-5{
+    border: 1px solid greenyellow;  
+}
+.div-6{
+    border: 1px solid greenyellow; 
+}
+.div-7{
+    border: 1px solid greenyellow;   
+}
+.div-8{
+    border: 1px solid greenyellow;  
+}
+.div-9{
+    border: 1px solid greenyellow; 
+}
+
+.div-1,.div-2,.div-3,.div-4,.div-5,.div-6,.div-7,.div-8,.div-9{
+    animation-name: divs;
+    animation-duration: 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes divs{
+    0%{
+border: 1px solid white;
+    }
+    50%{
+        border: 1px solid white;
+    }
+    70%{
+    
+
+        transform: rotate(45deg);
+        border: 2px solid red;
+        
+    }
+    
+    80%{
+        border: 1px solid #f1f1f1;
+        transition: all 5s;
+    }
+
+    100%{
+        border: 1px solid greenyellow;
+    }
+}
+
+/* the button purchase */
+
+
+.btn-buy{
+    display: block;
+    padding: 20px;
+    border: none;
+    color: lime;
+    background: #111;
+    margin-top: 12px;
+    transition: all 1.5s;
+}
+.btn-buy a{
+   text-decoration: none;
+}
+
+
+.btn-buy:hover{
+    background-color: #555;
+    color:black;
+    cursor: pointer; ;
+    border-radius: 33px;
+}
+/* span to syle the per kg */
+.kg{
+    color:green;
+    padding:12px ;
+    animation-name: per;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+
+}
+@keyframes per{
+    0%{
+        color: lightgreen;
+    }
+    50%{
+        color: lime;
+    }
+    80%{
+        color: red;
+    }
+    100%{
+        color: green;
+        font-weight: bolder;
+    }
+} 
+
+
+/* footer */
+footer{
+    background: greenyellow;
+    color:#fff;
+    height: 6vh;
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 23px;
+    padding: 12px;
+    text-align: center;
+}
+
+footer>span{
+    color: crimson;
+    font-weight: bolder;
+    padding: 3px;
+}
+
+/* the home navigation button */
+.current {
+    background: #000;
+    color:#fff;
+    cursor: none;
+    animation-name: home;
+    animation-duration: 5s;
+    transition: all;
+    animation-iteration-count: infinite;
+}
+
+@keyframes home{
+    0%{
+        color: #fff;
+        
+    }
+
+    50%{
+        color: greenyellow;
+        
+    }
+
+    100%{
+        color: green;
+        
+    }
+}
+
+
+.log{
+    width: 123px;
+}
+
+/* spans styling */
+.showcase span{
+    color:darkgreen;
+}
+
+footer span{
+    color:red;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    text-shadow: 4px 4px 4px red;
+}
+/* the media screen of the index page */
+
+
+
+
+
+@media only screen and (max-width: 1200px){
+
+ 
+    /* wow flex responsive */
+    .container{
+        display: flex;
+        flex-direction: column;
+        background:green;
+    }
+   
+    .flexwrap{
+        display: flex;
+        flex-direction: column;
+      
+    }
+}
+
+
+
+
+
+
+
+/* the contact page */
+.cover-about{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url(../images/happy-young-black-woman-holding-basket-with-lettuce-on-4177755.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    
+}
+
+.about{
+    text-align: center;
+    margin: 0px 222px;
+    padding-top: 216px;
+}
+
+.about h1{
+    text-transform: capitalize;
+    text-shadow: -2px 3px 2px #fff;
+}
+.line{
+    height: 3px;
+    width: 20%;
+    margin:40px 40%;
+    background-color: red;    
+    animation-name: line;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    transition: all;
+}
+
+@keyframes line{
+    0%{
+        border: 1px solid red;
+    }
+    50%{
+        border: 1px solid #fff;   
+    }
+    100%{
+        border: 1px solid greenyellow;
+    }
+}
+
+.field{
+display:block;
+width: 100%;
+padding: 22px;
+border: none;
+margin: 18px;
+background-color: #111;
+color: #fff;
+border-radius: 12px;
+}
+
+.field:focus{
+    box-shadow: 5px 5px 5px #f4f4f4;
+
+    }
+
+.subme{
+    float: right;
+    padding: 15px;
+    border: 1px solid limegreen;
+    cursor: pointer;
+    color: #222;
+    transition: all 0.4s;
+    border-radius: 4px;
+}
+
+
+.subme:hover{
+    background: chartreuse;
+    color: #f1f1f1;
+}
+.area{
+margin-top: 33px;
+
+}
+.clear{
+    clear: both;
+}
+label{
+    color:#fff;
+    text-transform:uppercase;
+}
+/* fixes */
+.flexwrap>div a{
+    text-decoration: none;
+}
+
+/* remove button */
+.rem{
+    background: #f1f1f1;
+    border: none;
+    transition: all 0.4s;
+}
+.rem:hover{
+    background:red;
+    color: #fff;
+}
+#market{
+    color: green;
+    font-weight: bolder;
+    padding: 3px
+}
+
+
+/* the contact page media screen */
+
+
+@media only screen and (max-width: 1200px) {
+  
+    .cover-about{
+        background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.9)),url(../images/happy-young-black-woman-holding-basket-with-lettuce-on-4177755.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        
+    }
+    
+    .about{
+        text-align: center;
+        margin: 31px;
+        padding-top: 16px;
+    }
+    
+    .about h1{
+        text-transform: capitalize;
+        text-shadow: -2px 3px 2px #fff;
+    }
+    .line{
+        height: 3px;
+        width: 20%;
+        margin:40px 40%;
+        background-color: red;    
+        animation-name: line;
+        animation-iteration-count: infinite;
+        animation-duration: 3s;
+        transition: all;
+    }
+    
+    @keyframes line{
+        0%{
+            border: 1px solid red;
+        }
+        50%{
+            border: 1px solid #fff;   
+        }
+        100%{
+            border: 1px solid greenyellow;
+        }
+    }
+    
+    .field{
+    display:block;
+    width: 100%;
+    padding: 22px;
+    border: none;
+    margin: 18px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 12px;
+    } 
+    
+    .area{
+    margin-top: 33px;
+    
+    }
+    .clear{
+        clear: both;
+    }
+    label{
+        color:#fff;
+        text-transform:uppercase;
+    }
+
+}
+
+
+
+/* calculator */
+
+.calculator {
+    position: fixed;
+    top:373px;
+    background: #111;
+    padding: 12px;
+    border: 1px solid white;
+    animation-name: calc;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes calc{
+    0%{
+border: 1px solid #fff;
+    }
+    100%{
+        border: 1px solid greenyellow;
+    }
+}
+
+.calculator:hover{
+    background: green;
+    transition: all 1s;
+   
+}
+
+
+.calculator a{
+text-decoration: none;
+color:#fff;
+}
+.calculator a:hover{
+    color: black;
+}
+ @media only screen and (max-width: 1200px) {
+     .calculator{
+        position: fixed;
+        top:473px;
+        background: #111;
+        padding: 12px;
+        border: 1px solid white;
+        animation-name: calc;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+     }
+ }
+
